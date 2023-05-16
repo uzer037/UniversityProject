@@ -1,7 +1,14 @@
 .list-entry{
     padding: 1em;
     background-color: var(--second-primary);
-    width: 50%;
+    width: 75%;
     margin: 1em;
     border-radius: 15px;
+    box-shadow: 0px 0px 5px lightgray;
+    transition: 0.4s;
+}
+
+.list-entry:hover{
+    box-shadow: 0px 0px 15px lightgray;
+    transition: 0.2s;
 }
