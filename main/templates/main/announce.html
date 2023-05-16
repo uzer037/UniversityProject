@@ -1,8 +1,21 @@
 {% extends 'main/layout.html' %}
+
+{% load static %}
+
 {% block title %}
 Афиша
 {% endblock %}
 
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'styles/list.css' %}"/>
+{% endblock %}
+
 {% block content %}
 <h1>Афиша</h1>
+{% for event in events_list %}
+    <div class="list-entry">
+        <p>{{event.event_name}}</p>
+        <p>{{event.event_date}}</p>
+    </div>
+{% endfor %}
 {% endblock %}

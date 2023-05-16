@@ -1,10 +1,17 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
+
+from .models import EventsModel
+
+
 # Create your views here.
 def index(request):
     return render(request, 'main/index.html')
 
+
 def about(request):
     return render(request, 'main/about.html')
 
+
 def announce(request):
-    return render(request, 'main/announce.html')
+    events_list = EventsModel.objects.all()
+    return render(request, 'main/announce.html', {'events_list': events_list})

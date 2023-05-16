@@ -1,0 +1,20 @@
+:root{
+    --text: #4c5a6b;
+    --background: #e1e0f5;
+    --primary: #2a86fe;
+    --second-primary: #ecf1fe;
+    --accent: #4d82fe;
+    font-family: sans-serif;
+}
+
+html
+{
+    background-color: var(--background);
+}
+
+button{
+    border-style: solid;
+    border-radius: 15px;
+    border-color: var(--second-primary);
+    background-color: var(--background);
+}

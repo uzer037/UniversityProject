@@ -1,0 +1,7 @@
+.list-entry{
+    padding: 1em;
+    background-color: var(--second-primary);
+    width: 50%;
+    margin: 1em;
+    border-radius: 15px;
+}
