@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,300&display=swap');
+
+html {
+    background-image: url('bc_red.jpg');
+
+}
+
+.mginfo {
+    position: static;
+    text-align: left;
+    font-weight: normal;
+    background-color: #00000055;
+    padding: 0.75em;
+    border-radius: 5px;
+    width: fit-content;
+    color: whitesmoke;
+}
+
+.intro {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+}
+
+.img{
+    background-attachment: fixed;
+}
+body {
+    font-family: 'Cormorant Garamond', serif;
+}
