@@ -1,6 +1,6 @@
 {% load static %}
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="{% if request.GET.theme and request.GET.theme == 'dark' %}dark{% else %}defaul{% endif %}">
 <head>
     <link rel="apple-touch-icon" sizes="57x57" href="{% static 'favicon/apple-icon-57x57.png' %}">
     <link rel="apple-touch-icon" sizes="60x60" href="{% static 'favicon/apple-icon-60x60.png' %}">
@@ -19,7 +19,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="{% static 'favicon/ms-icon-144x144.png' %}">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="{% static 'styles/manager-default.css' %}"/>
+    <link rel="stylesheet" href="{% static 'styles/public-default.css' %}"/>
 
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -30,6 +30,7 @@
 </head>
 <body>
     <div class="header">
+        {% include "main/header.html" %}
     </div>
     <div class="content">
         {% block content %}

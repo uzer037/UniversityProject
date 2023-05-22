@@ -15,3 +15,7 @@ def about(request):
 def announce(request):
     events_list = EventsModel.objects.all()
     return render(request, 'main/announce.html', {'events_list': events_list})
+
+def announce_detail(request):
+    events_list = EventsModel.objects.all()
+    return render(request, 'main/announce_detail.html', {'events_list': events_list})

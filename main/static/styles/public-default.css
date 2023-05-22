@@ -1,0 +1,72 @@
+:root{
+    font-family: sans-serif;
+}
+
+/* default theme */
+:root{
+    --text: #4c5a6b;
+    --background: #e1e0f5;
+    --primary: #2a86fe;
+    --secondary: #ecf1fe;
+    --accent: #4d82fe;
+}
+
+/* dark theme */
+:root[data-theme="dark"]{
+    --text: #e8b882;
+    --background: #29182a;
+    --primary: #f6a96a;
+    --secondary: #34212f;
+    --accent: #bd4277;
+}
+
+html{
+    background-color: var(--background);
+}
+
+button{
+    border-style: solid;
+    border-radius: 15px;
+    border-color: var(--secondary);
+    background-color: var(--background);
+}
+
+.content{
+    padding: 1em;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+    font-weight:bold;
+}
+
+.header{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+    background-color: var(--secondary);
+    font-weight:bold;
+    width: 90%;
+    border-radius: 7px;
+    padding: 1em;
+}
+
+.header > *{
+    margin: 0.5em;
+    padding: 1em;
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px var(--primary);
+}
+
+.button{
+    color: var(--primary);
+    background-color: var(--secondary);
+}
+
+.h{
+    color: var(--primary);
+    font-weight:bolder;
+}
